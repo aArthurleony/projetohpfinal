@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <title>Harry potter api</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="divlogo">
+                <a href="index.html"><img src="./img/logo.png" alt=" "class="logo"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./pages/person.html" class="nav-link">Personagens</a></li>
+                    <li class="nav-item"><a href="./pages/alunos.html" class="nav-link">Alunos</a></li>
+                    <li class="nav-item"><a href="./pages/alunos.html" class="nav-link">funcionários de hogwarts</a></li>
+                    <li class="nav-item"><a href="./pages/feiticos.html" class="nav-link">Feitiços</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <!-- menu mobile -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./pages/person.html" class="nav-link">Personagens</a></li>
+                <li class="nav-item"><a href="./pages/alunos.html" class="nav-link">Alunos</a></li>
+                <li class="nav-item"><a href="./pages/staff.html" class="nav-link">funcionários de hogwarts</a></li>
+                <li class="nav-item"><a href="./pages/feiticos.html" class="nav-link">Feitiços</a></li>
+            </ul>
+        </div>
+        <!--fim do menu mobile-->
+    </header>
+    <div class="comeco">
+        <h1 class="h1-inicio">API do Harry Potter</h1>
+        <h2>Comece a explorar o mundo mágico de Harry Potter agora mesmo!</h2>    
+    </div>
+    <main class="corpo">
+        <div class="login-box">
+            <div class="form">
+                <h1 class="h1-login">Login</h1>
+                <form class="login-form" id="login-form">
+                    <input type="text" id="username" placeholder="username"/>
+                    <input type="password" id="password" placeholder="password"/>
+                    <button class="Entrar" id="Entrar">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/login.js"></script>
+    <footer>
+        <p>&copy;Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

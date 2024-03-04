@@ -1,0 +1,276 @@
+/*nav bar e mobile menu*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+    
+body {
+    background-image: url(../img/castle.jpg);/*img de fundo*/
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh ;
+}
+
+header {
+    background-color: #242633;
+    box-shadow: 0px 3px 10px #000;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 6rem;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    letter-spacing: 2px;
+                                                
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+    padding: 10px;
+    font-family: 'Harry Potter', sans-serif;       
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 21px;
+}
+.nav-item :hover{
+    background-color:rgb(57, 47, 122);
+    transition: 0.3s;
+}
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #6b63b5;
+    margin: 5px 0px 0px 5px;
+}
+/*hover do botao login*/
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.login-button :hover{
+    background-color:rgb(57, 47, 122);
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+/*menu mobile*/
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+/*fim do menu*/
+.logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+}
+
+/* Estilização da div dos botões de pgn ant e prox pgn */
+#botoes-pgn {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Centralizar os personagens */
+#alunos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*verticalmente */
+    gap: 20px;
+    padding: 20px;
+    margin: auto; /* Adiciona margem automática para centralizar na tela */
+    max-width: 1200px; 
+}
+
+.alunos-box {
+    text-align: center;
+    background-color: #242633;
+    color: #fff; /* Cor do texto */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 40px); /*serve para deixar apenas 3 personagens por linha*/
+    margin: 20px;
+    transition: transform 0.3s ease; /*hover com transição suave*/
+    height: 500px;
+
+}
+
+.alunos-box img {
+    max-width: 100%;
+    height: 200px; 
+    border-radius: 8px;
+}
+
+.alunos-box h2 {
+    font-family: 'harry potter';
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: goldenrod;
+}
+
+#proxima-pagina, #pagina-anterior {
+    background-color: #6b63b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#proxima-pagina:hover, #pagina-anterior:hover {
+    background-color: #574f9f;
+}
+#botoes-pgn {
+    text-align: center; 
+    margin-top: 20px; 
+    padding-bottom: 40px;
+
+}
+
+#botoes-pgn button {
+    margin: 0 10px; 
+}
+.filtro-classe {
+    margin: 20px auto; 
+    text-align: center; 
+}
+
+.filtro-classe label {
+    font-size: 20px;
+    font-family: 'harry potter';
+
+}
+
+.filtro-classe select {
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 10px; 
+    border: 5px solid #242633; 
+    width: 200px;
+    appearance: none; /* Remove a aparência padrão do select */
+    font-family: 'harry potter',cursive;
+    letter-spacing: 2px;
+    color: goldenrod;
+    font-weight: 600;
+
+}
+
+.filtro-classe option {
+    text-align: center; 
+    color: goldenrod;
+    font-family: 'harry potter';
+}
+.filtro-classe select:focus {
+    outline: none; /* Remove o contorno ao receber foco */
+}
+
+.alunos-box .detalhes {
+    text-align: left; /* Centraliza o texto à esquerda */
+    margin-top: 10px; 
+}
+
+.alunos-box .detalhes p {
+    margin-bottom: 5px; /* Adiciona um espaço entre cada parágrafo */
+    font-size: 14px; 
+    color: #ccc;
+    line-height: 1.4; /* Espaçamento entre linhas */
+}
+
+.alunos-box .detalhes strong {
+    color: #fff; /* Cor do texto em negrito */
+    font-weight: bold; /*espessura da fonte*/
+}
+.alunos-box:hover {
+    transform: scale(1.01); /* Aumenta um pouco o tamanho da caixa ao passar o mouse sobre ela */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color:  #242633;
+    box-shadow: 10px 10px 10px 10px #000;
+
+}
